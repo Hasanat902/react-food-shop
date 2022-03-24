@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDirections } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Meal.css';
 
@@ -11,7 +13,10 @@ const Meal = (props) => {
                 <h3>Name: {strMeal}</h3>
                 <p>Category: {strCategory}</p>
                 <p>Region: {strArea}</p>
-                <button className='meal-btn' onClick={() => handleMealDetails(meal)}>Details</button>
+                <button className='meal-btn' onClick={() => handleMealDetails(meal)}>
+                    <p className='btn-text'>Details</p>
+                    <FontAwesomeIcon icon={faDirections}></FontAwesomeIcon>
+                </button>
             </div>
         </div>
     );
