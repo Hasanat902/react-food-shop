@@ -9,3 +9,11 @@
     gap: 45px;
     margin: 70px 100px;
 }
+
+.meal-details{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 228, 196, 0.767);
+    padding-top: 20px;
+    padding-left: 30px;
+}
